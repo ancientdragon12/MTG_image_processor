@@ -1,3 +1,11 @@
+
+"""
+File: image_processor.py
+Author: Ancientdragon12
+Date: 1-2-2024
+Description: Image Processing pipeline
+"""
+
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np

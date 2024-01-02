@@ -1,3 +1,11 @@
+
+"""
+File: batch_image.py
+Author: Ancientdragon12
+Date: 1-2-2024
+Description: Automating image processing pipeline
+"""
+
 import os
 import cv2
 from image_processor import image_process
