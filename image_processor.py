@@ -66,6 +66,14 @@ def image_process(input_image, threshold = 75, verbose = False):
         # Resize the transformed image
         final_image = cv2.resize(transformed_image, (480, 680))  # Specify new width and height
 
+        # Crop a portion of the resized image
+        x_start, y_start = 50, 50  # Starting coordinates of the crop
+        x_end, y_end = 300, 400   # Ending coordinates of the crop
+        cropped_image = final_image[y_start:y_end, x_start:x_end]
+
+        # Save the cropped image
+        cv2.imwrite('cropped_final_img.jpg', cropped_image)
+
         # Save the transformed image as final_img.jpg
         cv2.imwrite('final_img.jpg', final_image)
         
